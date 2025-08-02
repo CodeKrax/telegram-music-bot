@@ -4,7 +4,7 @@ import yt_dlp
 import os
 import uuid
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")  # Use env variable
+BOT_TOKEN = os.getenv("7539509687:AAG-j2teWlL40G5A962tg3yuMD2nBpWsCLw")  # Use env variable
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("🎵 Send /play <song name> to play music!")
@@ -42,7 +42,7 @@ async def play(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("⚠️ Song not found.")
         print("Error:", e)
 
-app = ApplicationBuilder().token(BOT_TOKEN).build()
+app = ApplicationBuilder().token(7539509687:AAG-j2teWlL40G5A962tg3yuMD2nBpWsCLw).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("play", play))
 app.run_polling()

@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: telegram-music-bot
-    runtime: python
-    buildCommand: ""
-    startCommand: python bot.py
-    envVars:
-      - key: BOT_TOKEN
-        sync: false
